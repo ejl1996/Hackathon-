@@ -4,11 +4,11 @@ Highcharts.chart('container', {
         type: 'pie'
     },
     title: {
-        text: 'Unemployment rate in Canada by province. January 2022',
-        align: 'left'
+        text: '',
+        align: ''
     },
     subtitle: {
-        text: 'Click the slices to view versions. Source: <a href="https://www.statista.com/statistics/442316/canada-unemployment-rate-by-provinces/" target="_blank">statcounter.com</a>',
+        text: 'https://www.statista.com/statistics/442316/canada-unemployment-rate-by-provinces/',
         align: 'left'
     },
 
