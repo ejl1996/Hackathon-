@@ -13,7 +13,7 @@ Highcharts.chart('container', {
         align: ''
     },
     xAxis: {
-        categories: ['British Columbia', 'Alberta', 'Saskatchewan', 'Manitoba', 'Ontario', 'Quebec', 'New Brunswick', 'Nova Scotia', 'Prince Edward Island', 'Newfoundland and Labrador'],
+        categories: ['Canada'],
         title: {
             text: null
         }
