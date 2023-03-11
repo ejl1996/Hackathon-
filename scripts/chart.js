@@ -1,296 +1,87 @@
-// Create the chart
 Highcharts.chart('container', {
     chart: {
-        type: 'pie'
+        type: 'bar'
     },
     title: {
         text: '',
         align: ''
     },
-
-    accessibility: {
-        announceNewData: {
-            enabled: true
+    subtitle: {
+        text: '' +
+            '' +
+            '',
+        align: ''
+    },
+    xAxis: {
+        categories: ['Canada'],
+        title: {
+            text: null
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Population (millions)',
+            align: 'high'
         },
-        point: {
-            valueSuffix: '%'
+        labels: {
+            overflow: 'justify'
         }
     },
-
-    plotOptions: {
-        series: {
-            dataLabels: {
-                enabled: true,
-                format: '{point.name}: {point.y:.1f}%'
-            }
-        }
-    },
-
     tooltip: {
-        headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-        pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+        valueSuffix: ' millions'
     },
-
-    series: [
-        {
-            name: 'Browsers',
-            colorByPoint: true,
-            data: [
-                {
-                    name: 'Newfoundland and Labrador',
-                    y: 10.8,
-                    drilldown: 'Newfoundland and Labrador'
-                },
-                {
-                    name: 'New Brunswick',
-                    y: 7.3,
-                    drilldown: 'New Brunswick'
-                },
-                {
-                    name: 'Prince Edward Island',
-                    y: 7.2,
-                    drilldown: 'Prince Edward Island'
-                },
-                {
-                    name: 'Nova Scotia',
-                    y: 6.5,
-                    drilldown: 'Nova Scotia'
-                },
-                {
-                    name: 'Alberta',
-                    y: 5.8,
-                    drilldown: 'Alberta'
-                },
-                {
-                    name: 'Ontario',
-                    y: 5.6,
-                    drilldown: 'Ontario'
-                },
-                {
-                    name: 'Yukon',
-                    y: 5.2,
-                    drilldown: 'Yukon'
-                },
-                {
-                    name: 'British Columbia',
-                    y: 4.7,
-                    drilldown: 'British Columbia'
-                },
-                {
-                    name: 'Manitoba',
-                    y: 4.6,
-                    drilldown: 'Manitoba'
-                },
-                {
-                    name: 'Canada (overall)',
-                    y: 5.3,
-                    drilldown: 'Canada (overall)'
-                }
-            ]
-        }
-    ],
-    drilldown: {
-        series: [
-            {
-                name: 'Chrome',
-                id: 'Chrome',
-                data: [
-                    [
-                        'v97.0',
-                        36.89
-                    ],
-                    [
-                        'v96.0',
-                        18.16
-                    ],
-                    [
-                        'v95.0',
-                        0.54
-                    ],
-                    [
-                        'v94.0',
-                        0.7
-                    ],
-                    [
-                        'v93.0',
-                        0.8
-                    ],
-                    [
-                        'v92.0',
-                        0.41
-                    ],
-                    [
-                        'v91.0',
-                        0.31
-                    ],
-                    [
-                        'v90.0',
-                        0.13
-                    ],
-                    [
-                        'v89.0',
-                        0.14
-                    ],
-                    [
-                        'v88.0',
-                        0.1
-                    ],
-                    [
-                        'v87.0',
-                        0.35
-                    ],
-                    [
-                        'v86.0',
-                        0.17
-                    ],
-                    [
-                        'v85.0',
-                        0.18
-                    ],
-                    [
-                        'v84.0',
-                        0.17
-                    ],
-                    [
-                        'v83.0',
-                        0.21
-                    ],
-                    [
-                        'v81.0',
-                        0.1
-                    ],
-                    [
-                        'v80.0',
-                        0.16
-                    ],
-                    [
-                        'v79.0',
-                        0.43
-                    ],
-                    [
-                        'v78.0',
-                        0.11
-                    ],
-                    [
-                        'v76.0',
-                        0.16
-                    ],
-                    [
-                        'v75.0',
-                        0.15
-                    ],
-                    [
-                        'v72.0',
-                        0.14
-                    ],
-                    [
-                        'v70.0',
-                        0.11
-                    ],
-                    [
-                        'v69.0',
-                        0.13
-                    ],
-                    [
-                        'v56.0',
-                        0.12
-                    ],
-                    [
-                        'v49.0',
-                        0.17
-                    ]
-                ]
-            },
-            {
-                name: 'Safari',
-                id: 'Safari',
-                data: [
-                    [
-                        'v15.3',
-                        0.1
-                    ],
-                    [
-                        'v15.2',
-                        2.01
-                    ],
-                    [
-                        'v15.1',
-                        2.29
-                    ],
-                    [
-                        'v15.0',
-                        0.49
-                    ],
-                    [
-                        'v14.1',
-                        2.48
-                    ],
-                    [
-                        'v14.0',
-                        0.64
-                    ],
-                    [
-                        'v13.1',
-                        1.17
-                    ],
-                    [
-                        'v13.0',
-                        0.13
-                    ],
-                    [
-                        'v12.1',
-                        0.16
-                    ]
-                ]
-            },
-            {
-                name: 'Edge',
-                id: 'Edge',
-                data: [
-                    [
-                        'v97',
-                        6.62
-                    ],
-                    [
-                        'v96',
-                        2.55
-                    ],
-                    [
-                        'v95',
-                        0.15
-                    ]
-                ]
-            },
-            {
-                name: 'Firefox',
-                id: 'Firefox',
-                data: [
-                    [
-                        'v96.0',
-                        4.17
-                    ],
-                    [
-                        'v95.0',
-                        3.33
-                    ],
-                    [
-                        'v94.0',
-                        0.11
-                    ],
-                    [
-                        'v91.0',
-                        0.23
-                    ],
-                    [
-                        'v78.0',
-                        0.16
-                    ],
-                    [
-                        'v52.0',
-                        0.15
-                    ]
-                ]
+    plotOptions: {
+        bar: {
+            dataLabels: {
+                enabled: true
             }
-        ]
-    }
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'top',
+        x: -40,
+        y: 80,
+        floating: true,
+        borderWidth: 1,
+        backgroundColor:
+            Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF',
+        shadow: true
+    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'British Columbia',
+        data: [126.4]
+    }, {
+        name: 'Alberta',
+        data: [155.9]
+    }, {
+        name: 'Saskatchewan',
+        data: [26.5]
+    }, {
+        name: 'Manitoba',
+        data: [29.6]
+    }, {
+        name: 'Ontario',
+        data: [426.6]
+    }, {
+        name: 'Quebec',
+        data: [185.3]
+    }, {
+        name: 'New Brunswick',
+        data: [30.8]
+    }, {
+        name: 'Nova Scotia',
+        data: [26.5]
+    }, {
+        name: 'Prince Edward Island',
+        data: [7.0]
+    }, {
+        name: 'Newfoundland and Labrador',
+        data: [31.4]
+    }]
 });
