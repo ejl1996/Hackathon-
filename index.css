@@ -1,20 +1,42 @@
 
     
   .headerContainer{
-    height:600px;
+    height:540px;
     background: linear-gradient(315deg, #a316a0, #f3b2ad,  #a316a0)
   }
 
   .headerRight {
-    height:600px;
+    height:540px;
   }
 
   .headerButton{
+    margin-top:40px;
     font-size:26px;
     padding:10px 18px;
     font-weight: bold;
     color: #622569;
     display: inline-block;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .headerButton:hover {
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .navButton{
+    background-color: transparent;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-right:15px;
+    border-radius: 20px;
+  }
+
+  .navButton:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
   }
 
   /* fonts */
@@ -64,10 +86,6 @@
     text-decoration: none;
   }
   
-  nav a:hover {
-    background-color: black;
-    color: white;
-  }
   
   footer {
     overflow: hidden;
