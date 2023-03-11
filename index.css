@@ -1,3 +1,78 @@
-.title { 
-    
-}
+
+  
+  /* fonts */
+  .one {
+    font-size: 18px;
+    font-family: 'Oswald';
+    font-weight: 700;
+  }
+  
+  .two {
+    font-size: 90px;
+    font-family: 'Oswald';
+    font-weight: 700;
+  }
+  
+  .three {
+    font-size: 24px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+  }
+  
+  .four {
+    font-size: 24px;
+    font-family: 'Oswald';
+    font-weight: 700;
+  }
+  
+  .five-header {
+    font-size: 36px;
+    font-family: 'Oswald';
+    font-weight: 700;
+  }
+  
+  .five-item {
+    font-size: 21px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+  }
+  
+
+  
+  
+  nav a {
+    color: white;
+    float: right;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  footer {
+    overflow: hidden;
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  
+  
+  @media screen and (max-width: 500px) {
+  
+    footer {
+      display: none;
+    }
+  
+    nav {
+      display: none;
+    }
+  }
+  
