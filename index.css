@@ -26,6 +26,11 @@
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
   }
 
+  footer{
+    height:540px;
+    background: linear-gradient(315deg, #a316a0, #f3b2ad,  #a316a0)
+  }
+
   .navButton{
     background-color: transparent;
     transition: all 0.5s;
