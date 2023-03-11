@@ -4,7 +4,7 @@ Highcharts.chart('container', {
         type: 'pie'
     },
     title: {
-        text: 'Unemployment rate in Canada by province. January, 2022',
+        text: 'Unemployment rate in Canada by province. January 2022',
         align: 'left'
     },
     subtitle: {
@@ -41,29 +41,54 @@ Highcharts.chart('container', {
             colorByPoint: true,
             data: [
                 {
-                    name: 'Chrome',
-                    y: 61.04,
-                    drilldown: 'Chrome'
+                    name: 'Newfoundland and Labrador',
+                    y: 10.8,
+                    drilldown: 'Newfoundland and Labrador'
                 },
                 {
-                    name: 'Safari',
-                    y: 9.47,
-                    drilldown: 'Safari'
+                    name: 'New Brunswick',
+                    y: 7.3,
+                    drilldown: 'New Brunswick'
                 },
                 {
-                    name: 'Edge',
-                    y: 9.32,
-                    drilldown: 'Edge'
+                    name: 'Prince Edward Island',
+                    y: 7.2,
+                    drilldown: 'Prince Edward Island'
                 },
                 {
-                    name: 'Firefox',
-                    y: 8.15,
-                    drilldown: 'Firefox'
+                    name: 'Nova Scotia',
+                    y: 6.5,
+                    drilldown: 'Nova Scotia'
                 },
                 {
-                    name: 'Other',
-                    y: 11.02,
-                    drilldown: null
+                    name: 'Alberta',
+                    y: 5.8,
+                    drilldown: 'Alberta'
+                },
+                {
+                    name: 'Ontario',
+                    y: 5.6,
+                    drilldown: 'Ontario'
+                },
+                {
+                    name: 'Yukon',
+                    y: 5.2,
+                    drilldown: 'Yukon'
+                },
+                {
+                    name: 'British Columbia',
+                    y: 4.7,
+                    drilldown: 'British Columbia'
+                },
+                {
+                    name: 'Manitoba',
+                    y: 4.6,
+                    drilldown: 'Manitoba'
+                },
+                {
+                    name: 'Canada',
+                    y: 5.3,
+                    drilldown: 'Canada'
                 }
             ]
         }
