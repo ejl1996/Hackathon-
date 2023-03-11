@@ -86,9 +86,9 @@ Highcharts.chart('container', {
                     drilldown: 'Manitoba'
                 },
                 {
-                    name: 'Canada',
+                    name: 'Canada (overall)',
                     y: 5.3,
-                    drilldown: 'Canada'
+                    drilldown: 'Canada (overall)'
                 }
             ]
         }
