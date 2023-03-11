@@ -4,11 +4,11 @@ Highcharts.chart('container', {
         type: 'pie'
     },
     title: {
-        text: 'Browser market shares. January, 2022',
+        text: 'Unemployment rate in Canada by province. January, 2022',
         align: 'left'
     },
     subtitle: {
-        text: 'Click the slices to view versions. Source: <a href="http://statcounter.com" target="_blank">statcounter.com</a>',
+        text: 'Click the slices to view versions. Source: <a href="https://www.statista.com/statistics/442316/canada-unemployment-rate-by-provinces/" target="_blank">statcounter.com</a>',
         align: 'left'
     },
 
