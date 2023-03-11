@@ -7,10 +7,6 @@ Highcharts.chart('container', {
         text: '',
         align: ''
     },
-    subtitle: {
-        text: 'https://www.statista.com/statistics/442316/canada-unemployment-rate-by-provinces/',
-        align: 'left'
-    },
 
     accessibility: {
         announceNewData: {
