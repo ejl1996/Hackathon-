@@ -3,17 +3,17 @@ Highcharts.chart('container', {
         type: 'bar'
     },
     title: {
-        text: 'Historic World Population by Region',
-        align: 'left'
+        text: '',
+        align: ''
     },
     subtitle: {
-        text: 'Source: <a ' +
-            'href="https://en.wikipedia.org/wiki/List_of_continents_and_continental_subregions_by_population"' +
-            'target="_blank">Wikipedia.org</a>',
-        align: 'left'
+        text: '' +
+            '' +
+            '',
+        align: ''
     },
     xAxis: {
-        categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
+        categories: ['British Columbia', 'Alberta', 'Saskatchewan', 'Manitoba', 'Ontario', 'Quebec', 'New Brunswick', 'Nova Scotia', 'Prince Edward Island', 'Newfoundland and Labrador'],
         title: {
             text: null
         }
@@ -55,15 +55,33 @@ Highcharts.chart('container', {
     },
     series: [{
         name: 'British Columbia',
-        data: [631]
+        data: [126.4]
     }, {
-        name: 'Year 2000',
-        data: 500
+        name: 'Alberta',
+        data: [155.9]
     }, {
-        name: 'Year 2010',
-        data: 100
+        name: 'Saskatchewan',
+        data: [26.5]
     }, {
-        name: 'Year 2018',
-        data: 100
+        name: 'Manitoba',
+        data: [29.6]
+    }, {
+        name: 'Ontario',
+        data: [426.6]
+    }, {
+        name: 'Quebec',
+        data: [185.3]
+    }, {
+        name: 'New Brunswick',
+        data: [30.8]
+    }, {
+        name: 'Nova Scotia',
+        data: [26.5]
+    }, {
+        name: 'Prince Edward Island',
+        data: [7.0]
+    }, {
+        name: 'Newfoundland and Labrador',
+        data: [31.4]
     }]
 });
