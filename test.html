@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Quiz</title>
+</head>
+
+<body style="padding: 50px; background-image: linear-gradient(to right, red,orange,yellow,green, aqua
+    ,violet);">
+    <h1>Please answer the questions to test your status</h1>
+
+    Q1. Do you have a job currently?<br>
+    <input type="radio" name="question1" id="A1">No<br>
+    <input type="radio" name="question1" id="A2">I am retired<br>
+    <input type="radio" name="question1" id="A3">I am still in education<br>
+    <input type="radio" name="question1" id="A4">Yes<br>
+    <br>
+    Q2. If you have a job, do you feel safe and enjoy it?<br>
+    <input type="radio" name="question2" id="B1">I have no job or I am retired<br>
+    <input type="radio" name="question2" id="B2">I don't feel safe at all<br>
+    <input type="radio" name="question2" id="B3">I feel safe and I am feel satisfied<br>
+    <input type="radio" name="question2" id="B4">Yes, I feel very safe and I love it!<br>
+    <br>
+    Q3. What is your?<br>
+    <input type="radio" name="question3" id="C1">A<br>
+    <input type="radio" name="question3" id="C2">B<br>
+    <input type="radio" name="question3" id="C3">C<br>
+    <input type="radio" name="question3" id="C4">D<br>
+    <br>
+    Q4. What is your?<br>
+    <input type="radio" name="question4" id="D1">A<br>
+    <input type="radio" name="question4" id="D2">B<br>
+    <input type="radio" name="question4" id="D3">C<br>
+    <input type="radio" name="question4" id="D4">D<br>
+    <br>
+    Q5. What is your?<br>
+    <input type="radio" name="question5" id="E1">A<br>
+    <input type="radio" name="question5" id="E2">B<br>
+    <input type="radio" name="question5" id="E3">C<br>
+    <input type="radio" name="question5" id="E4">D<br>
+    <br>
+    <input type="submit" name="submit" value="submitQuiz" onclick="result()">
+
+    <main></main>
+    <script type="text/javascript">
+        function addscores(index, score, value) {
+            if (document.getElementById("A" + index).checked) {
+                score += value;
+            }
+            if (document.getElementById("B" + index).checked) {
+                score += value;
+            }
+            if (document.getElementById("C" + index).checked) {
+                score += value;
+            }
+            if (document.getElementById("D" + index).checked) {
+                score += value;
+            }
+            if (document.getElementById("E" + index).checked) {
+                score += value;
+            }
+            return score
+        }
+
+        function result() {
+            var score = 0;
+            score = addscores("1", score, 1)
+            score = addscores("2", score, 2)
+            score = addscores("3", score, 3)
+            score = addscores("4", score, 4)
+            
+            $("main").html(
+                `<div>
+                    <p> Your score is ${score}</p>
+                 </div>`
+            )
+        }
+
+    </script>
+
+</body>
+
+</html>
