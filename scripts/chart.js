@@ -6,14 +6,8 @@ Highcharts.chart('container', {
         text: '',
         align: ''
     },
-    subtitle: {
-        text: '' +
-            '' +
-            '',
-        align: ''
-    },
     xAxis: {
-        categories: ['Provinces'],
+        categories: [' '],
         title: {
             text: null
         }
@@ -43,7 +37,7 @@ Highcharts.chart('container', {
         align: 'right',
         verticalAlign: 'top',
         x: -40,
-        y: 80,
+        y: 20,
         floating: true,
         borderWidth: 1,
         backgroundColor:
