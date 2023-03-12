@@ -17,7 +17,7 @@ Highcharts.chart('container', {
         type: 'bar'
     },
     title: {
-        text: ' Unemployment in Canada by provinces, January 2023',
+        text: ' Unemployment population in Canada by provinces, January 2023',
         align: 'left',
         fontSize:'24px'
     },
