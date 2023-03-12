@@ -13,7 +13,7 @@ Highcharts.chart('container', {
         align: ''
     },
     xAxis: {
-        categories: ['Canada'],
+        categories: ['Provinces'],
         title: {
             text: null
         }
