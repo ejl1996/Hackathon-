@@ -70,9 +70,18 @@
             score = addscores("3", score, 3)
             score = addscores("4", score, 4)
 
+            if (score >= 17) {
+                message = "You seem to be all good with your current job!"
+            } else if (score <= 8) {
+                message = "It seems you are retired or you are still in education. So good job completing your work and good luck with your studies!"
+            } else {
+                message = "You may have to consider preparing on improving your job."
+            }
+
             $("main").html(
                 `<div>
                     <p> Your score is ${score}</p>
+                    <p> ${message} </p>
                  </div>`
             )
         }
