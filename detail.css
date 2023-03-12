@@ -1,0 +1,31 @@
+.detail-header {
+    height:60px;
+    background-color: #a316a0;
+}
+
+.detail-content{
+    padding:20px 10vw;
+}
+
+.detail-title{
+    font-size:28px;
+    font-weight:bold;
+    font-family: 'Montserrat';
+    display: inline-block;
+}
+
+.detail-image{
+    margin-top: 30px;
+    background-image: url(./assets/detailImage.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:400px;
+}
+
+.detail-textBody{
+    margin-top:40px;
+    line-height: 30px;
+    width:100%;
+    font-size: 18px;
+    text-align: justify;
+}
