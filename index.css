@@ -53,6 +53,7 @@ body {
     cursor: pointer;
     margin-right:15px;
     border-radius: 20px;
+    color:#fff;
   }
 
   .navButton:hover{
@@ -200,12 +201,15 @@ body {
   }
 
   .part3Text {
-    margin-top:130px;
+    margin-top:190px;
+    opacity: 0;
     color: white;
     font-size:21px;
     padding: 10px;
     background-color: #cd68a7;
     border-radius: 10px;
+    transition: all 1.5s;
+    margin-left:10px;
   }
 
   /* card display */
@@ -302,3 +306,11 @@ body {
   padding: 20px 6vw;
 }
 
+footer {
+  display:flex;
+  padding:20px 6vw;
+}
+
+.footerBlock{
+  flex:1;
+}

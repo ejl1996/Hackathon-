@@ -24,15 +24,15 @@
 
 </head>
 
-<body>
+<body onscroll="scrollListener()">
     <!-- header starts -->
     <div class="headerContainer">
         <nav class="container darkest-bg white one" style="overflow: hidden; padding: 10px;">
             <a href="#" style="float: left ">Hackathon</a>
             <div class="row justify-content-end">
-                <a href="#" class="col-md-auto navButton">Home</a>
-                <a href="#" class="col-md-auto navButton">Statistics</a>
-                <a href="#" class="col-md-auto navButton">Tips for Career</a>
+                <div class="col-md-auto navButton">Home</div>
+                <div onclick="window.scrollTo(0,700)" class="col-md-auto navButton">Statistics</div>
+                <div onclick="window.scrollTo(0,1200)" href="#" class="col-md-auto navButton">Tips for Career</div>
             </div>
         </nav>
 
@@ -211,38 +211,19 @@
 
 
                     <footer>
-                        <h1 class="seven" style="text-align: center; color: white; padding: 30px">Job Security
-                        </h1>
-
-                        <div class="eight-item" style="width: 25%; float: left; padding-left: 30px;">
-                            <ul>
-                                <h4 style="color: #622569; text-align: center">Stay healthy</h4>
-                            </ul>
+                        <div class="footerBlock">
+                            <h6 style="font-size:22px;line-height:30px;margin:15px 0;">Contributers:</h6>
+                            <p>Emma Lee: pie chart JS and css part, landing page css part</p>
+                            <p>Michael Yu: test page JS part, landing page</p>
+                            <p>Muyang Li: CSS animations, general style modifications, scroll event JS part</p>
                         </div>
-
-                        <div style="width: 25%; float: left; text-align: center;">
-                            <ul>
-                                <h4 style="color: #622569">Have good knowledge</h4>
-                            </ul>
-                        </div>
-
-
-                        <div style="width: 25%; float: left; text-align: center;">
-                            <ul>
-                                <h4 style="color: #622569">Work as a team</h4>
-                            </ul>
-                        </div>
-
-
-                        <div style="width: 25%; float: right; text-align: center;">
-                            <ul>
-                                <h4 style="color: #622569">Stay postive</h4>
-                            </ul>
-                        </div>
-
-                        <a href=" https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410028703"
+                        <div class="footerBlock">
+                            <h6 style="font-size:22px;line-height:30px;margin:15px 0;">References</h6>
+                            <a href=" https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410028703"
                             style="font-size:15px;">https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410028703</a>
+                            <a href="https://professional.dce.harvard.edu/blog/eight-things-you-can-do-to-improve-your-communication-skills/">https://professional.dce.harvard.edu/blog/eight-things-you-can-do-to-improve-your-communication-skills/</a>
 
+                        </div>
                     </footer>
                     <script src="./scripts/chart.js"></script>
 </body>

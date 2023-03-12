@@ -1,3 +1,17 @@
+var ifRender = false
+
+function scrollListener() {
+    var top = document.documentElement.scrollTop
+    if (top>400 && window.ifRender==false){
+        renderChart()
+        window,ifRender = true
+        var elem = document.getElementsByClassName("part3Text")[0]
+        elem.setAttribute("style", "opacity:1;margin-top:130px;")
+    }
+}
+
+function renderChart(){
+    
 Highcharts.chart('container', {
     chart: {
         type: 'bar'
@@ -80,3 +94,5 @@ Highcharts.chart('container', {
         data: [31.4]
     }]
 });
+
+}
