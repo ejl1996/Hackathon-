@@ -27,7 +27,8 @@
   }
 
   footer{
-    height:540px;
+    height:300px;
+    width: 100%;
     background: linear-gradient(315deg, #a316a0, #f3b2ad,  #a316a0)
   }
 
