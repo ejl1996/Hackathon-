@@ -3,8 +3,9 @@ Highcharts.chart('container', {
         type: 'bar'
     },
     title: {
-        text: '',
-        align: ''
+        text: ' Unemployment in Canada by provinces, January 2023',
+        align: 'left',
+        fontSize:'24px'
     },
     xAxis: {
         categories: [' '],
